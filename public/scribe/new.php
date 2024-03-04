@@ -8,7 +8,7 @@ require_once dirname(__DIR__, 2) . "/globals.php";
 
 $userEmail = sqlQuery("SELECT email FROM users WHERE id = ?", [$_SESSION['authUserID']]);
 if (empty($userEmail['email'])) {
-    echo "Add providers email address to the address book, then try again.";
+    echo "<h3>Add providers email address to the address book, then try again.</h3>";
     exit;
 }
 $client = new Client();
