@@ -39,6 +39,17 @@ use OpenEMR\Core\Header;
             <h3><?php echo xlt('Safeguard patient privacy using a HIPAA-eligible service') ?></h3>
             <p><?php echo xlt('Built with security and privacy in mind, you control where your data is stored, with data encrypted in transit and at rest. AWS does not use inputs or outputs generated through the service to train its models.') ?></p>
         </div>
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-6 mx-auto">
+                <p class=""><?php echo htmlspecialchars("Specialties Supported are", ENT_QUOTES, 'UTF-8') ?></p>
+                <ul>
+                    <li><?php echo htmlspecialchars("Family Medicine", ENT_QUOTES, 'UTF-8') ?></li>
+                    <li><?php echo htmlspecialchars("Internal Medicine", ENT_QUOTES, 'UTF-8') ?></li>
+                    <li><?php echo htmlspecialchars("Obstetrics and Gynecology (OB-GYN)", ENT_QUOTES, 'UTF-8') ?></li>
+                    <li><?php echo htmlspecialchars("Pediatrics", ENT_QUOTES, 'UTF-8') ?></li>
+                </ul>
+            </div>
+        </div>
         <div class = "col-md-12">
             <h3><?php echo xlt('Get started') ?></h3>
             <p><?php echo xlt('To get started, you will need to register a payment method. When you register a payment method, use the same email address to sign into the application.') ?></p>
